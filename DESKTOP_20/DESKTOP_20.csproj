@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D1A8A0F-72B8-4428-A0A1-09B450B5D6DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DESKTOP_20</RootNamespace>
+    <AssemblyName>DESKTOP_20</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaftarAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaftarAkun.Designer.cs">
+      <DependentUpon>DaftarAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterBandaraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterBandaraForm.Designer.cs">
+      <DependentUpon>MasterBandaraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterJadwalPenerbangan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterJadwalPenerbangan.Designer.cs">
+      <DependentUpon>MasterJadwalPenerbangan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterKodePromo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterKodePromo.Designer.cs">
+      <DependentUpon>MasterKodePromo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaskapai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaskapai.Designer.cs">
+      <DependentUpon>MasterMaskapai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ubah Status Penerbangan%27.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubah Status Penerbangan%27.Designer.cs">
+      <DependentUpon>Ubah Status Penerbangan%27.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaftarAkun.resx">
+      <DependentUpon>DaftarAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterBandaraForm.resx">
+      <DependentUpon>MasterBandaraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterJadwalPenerbangan.resx">
+      <DependentUpon>MasterJadwalPenerbangan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterKodePromo.resx">
+      <DependentUpon>MasterKodePromo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaskapai.resx">
+      <DependentUpon>MasterMaskapai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ubah Status Penerbangan%27.resx">
+      <DependentUpon>Ubah Status Penerbangan%27.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane-ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane-ticket-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron-left-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-regular-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out-alt-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out-regular-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-alt-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-alt-left-regular-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-land-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-take-off-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-take-off-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-take-off-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase-tag-alt-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase-tag-alt-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-regular-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-five-regular-72.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
